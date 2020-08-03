@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0582FCD9080537DF96FB4B34E778E8D3 /* YGStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F407C8E53F50BCF5DF53BA810FC85E0 /* YGStyle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		137120FEA8AA87DB8AC1C4936C1B419D /* YGMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = EFABBB89C7947174CB17B95D6ADB585B /* YGMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17C3C640A143487C78BA74F0ED89DC15 /* FlexLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCAC0B3A8C705675409D884CCABA858 /* FlexLayout-dummy.m */; };
+		1B75AF9E3F8AD4D76E2DE5403A08714E /* YGLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42826F9C69645B8FB503810ADDD205B4 /* YGLayout.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		259E775B86F235AB5658DD0ED0C3026A /* YGLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 9781E33656B705FB506F327FC2C06387 /* YGLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25B3E6E33BB9C630944F98376D1F8A95 /* FlexLayout+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EF19D6D6E96F3832A1CB48E8461433 /* FlexLayout+Enum.swift */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		2C4A421CCD2AED344F88F63CE00645F5 /* Yoga.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2EADBFD9F0CC743C2E492D92E7FC5E5 /* Yoga.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		2DBCD2DA628D650C3573E51C0C0E2A24 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E7CB38CB7621D4343BCBF42B3A46529 /* Utils.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		335B4F0601EF3117138C2B76D5F0A60A /* UIView+Yoga.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45F647F6BAB1E707CCD1B14C477005CA /* UIView+Yoga.mm */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		3480AEA4EB6BDAD2FB035680249125EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		41BF40BC26C76E2C807900A1C25D70FF /* FlexLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66548CFF83C0EE31A1F604862C5A5B1C /* FlexLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		462A9A6D0831A96B730AFF0B6A895C9D /* FlexLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = FB83445441BCF5396BCC1DAE868DEB85 /* FlexLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		51AE7F4F2FCBF80F5457754F81844C6F /* YGNodePrint.h in Headers */ = {isa = PBXBuildFile; fileRef = C5FE4175F3112C37A1EE8227AD6ED0F4 /* YGNodePrint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5763BDACF6E1CCFB03077FBDD3CCF1D8 /* FlexLayout+Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDA9E0EDF80243CBAF151305547EAD7 /* FlexLayout+Private.swift */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		666B4759B1EADC94CCB208BDF6ECA5CB /* Pods-FlexLayoutDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F8D59D07451525A04978945C02ACB0 /* Pods-FlexLayoutDemo-dummy.m */; };
+		682DCFD73C751973E73C47FE3A4C0B0E /* YGLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D85CF665A9F2D4288CD82076360C1207 /* YGLayout+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		792AED9CED00D006A0D9908080AB2F3A /* Yoga.h in Headers */ = {isa = PBXBuildFile; fileRef = A9781F2C8C706D30EF1E0C406977B450 /* Yoga.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79585F133D5559AA07ACC86738462BF7 /* YGNodePrint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D4F4C5AC46C5EB5F7367FBAFBF9C367 /* YGNodePrint.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		8432EDEEEB5E2824EFB1CAED6C4F43B7 /* UIView+Yoga.h in Headers */ = {isa = PBXBuildFile; fileRef = 6278B8BC09D22411F779E34859FD2B9C /* UIView+Yoga.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8905A126D79F97AEEB5AB24C73E77282 /* YGLayoutExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00335D69C77261761ABA8221514346A /* YGLayoutExtensions.swift */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		943DC2D71DBC3C3F7A4DFC81C580EB3F /* Percent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403038A2F7B0607A11B30A54BE1D98E /* Percent.swift */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		9BEA8B0D3DE661379BE3F2B5951CE43E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A814E981192DACC9758D3EBC12E75EA2 /* YGLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 79CD9B3374C3771CEEA0ABDD97886E5A /* YGLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B0F97DE7AB3B6638A0B1328A7D5E9FFC /* YGLayout.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA70449DA41B1F2523922B5D37D216CD /* YGLayout.mm */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		B7575A8F906908A310679B985876B5FD /* Pods-FlexLayoutDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 603910BD73EA392B5E78097905B30724 /* Pods-FlexLayoutDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC048396A87D154BD42D2BC349B64967 /* FlexLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320E72786D7371B42ABAF07468BDE309 /* FlexLayout.swift */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		CDE42E7D5C642AFFFC465BEEB42B643C /* YGEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD3C55693216397281DB6C0212141CC /* YGEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6D9FD4EC0D5EB5491E3C2983C808998 /* YGNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A6660AF26B7FDB29069B6318A83FCA5 /* YGNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E10DE013A0C3F8E694949D4EBA549957 /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 183526EEB0A260D51D5B17131E89165B /* Utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E18F006BDE41BC893BAEDDD086B75B43 /* YGNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1039E3555CD8B65F8BB3B89E0243C21 /* YGNode.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		E4E9180E2601F43CCF1BAD0A385DC7ED /* UIView+FlexLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7310C866F860B67A21F8857D25DEFA20 /* UIView+FlexLayout.swift */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		F2C73BB13803630053D1E2C8947483B1 /* YGStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7F39AEC12A5D7C89A71272EB9015A /* YGStyle.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		FBE710076D8843D7CD63CE6526899FEE /* YGEnums.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A651868370C32908C46444C1E8448BAB /* YGEnums.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		FD12E01F8C10F481C829F3254AC66A42 /* Yoga-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 09577AA63102638D6D7A3E8C53C1D530 /* Yoga-internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		128F77E1BF16E5CD5E10BBA67DDBCA30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B669057662AC2963D287EC448129F48;
+			remoteInfo = FlexLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09577AA63102638D6D7A3E8C53C1D530 /* Yoga-internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Yoga-internal.h"; path = "Sources/yoga/Yoga-internal.h"; sourceTree = "<group>"; };
+		0D4F4C5AC46C5EB5F7367FBAFBF9C367 /* YGNodePrint.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGNodePrint.cpp; path = Sources/yoga/YGNodePrint.cpp; sourceTree = "<group>"; };
+		183526EEB0A260D51D5B17131E89165B /* Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Sources/yoga/Utils.h; sourceTree = "<group>"; };
+		2656DED1BF72618410B53E188F552F62 /* Pods-FlexLayoutDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlexLayoutDemo.modulemap"; sourceTree = "<group>"; };
+		27E54E43C4FC364E80A547F70DCA2C2E /* Pods-FlexLayoutDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexLayoutDemo-Info.plist"; sourceTree = "<group>"; };
+		320E72786D7371B42ABAF07468BDE309 /* FlexLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexLayout.swift; path = Sources/Swift/FlexLayout.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3EC63C02350FDB048C0656ED0C0ADBDC /* FlexLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexLayout.xcconfig; sourceTree = "<group>"; };
+		42826F9C69645B8FB503810ADDD205B4 /* YGLayout.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGLayout.cpp; path = Sources/yoga/YGLayout.cpp; sourceTree = "<group>"; };
+		45F647F6BAB1E707CCD1B14C477005CA /* UIView+Yoga.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "UIView+Yoga.mm"; path = "Sources/YogaKit/UIView+Yoga.mm"; sourceTree = "<group>"; };
+		4F10BA74886E953332713A245A673CE9 /* Pods-FlexLayoutDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlexLayoutDemo-frameworks.sh"; sourceTree = "<group>"; };
+		4F407C8E53F50BCF5DF53BA810FC85E0 /* YGStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGStyle.h; path = Sources/yoga/YGStyle.h; sourceTree = "<group>"; };
+		55EF19D6D6E96F3832A1CB48E8461433 /* FlexLayout+Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FlexLayout+Enum.swift"; path = "Sources/Swift/Impl/FlexLayout+Enum.swift"; sourceTree = "<group>"; };
+		5A6AB4FB1DD263E37F4B90F60294242A /* Pods-FlexLayoutDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlexLayoutDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5C0AF76283DC5ED9C570DF51C2C0C617 /* Pods-FlexLayoutDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexLayoutDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5CD7F39AEC12A5D7C89A71272EB9015A /* YGStyle.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGStyle.cpp; path = Sources/yoga/YGStyle.cpp; sourceTree = "<group>"; };
+		5E02DE5795C35DDF033B5F61A1BFDD53 /* Pods_FlexLayoutDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlexLayoutDemo.framework; path = "Pods-FlexLayoutDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FDA9E0EDF80243CBAF151305547EAD7 /* FlexLayout+Private.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FlexLayout+Private.swift"; path = "Sources/Swift/Impl/FlexLayout+Private.swift"; sourceTree = "<group>"; };
+		603910BD73EA392B5E78097905B30724 /* Pods-FlexLayoutDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlexLayoutDemo-umbrella.h"; sourceTree = "<group>"; };
+		6278B8BC09D22411F779E34859FD2B9C /* UIView+Yoga.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Yoga.h"; path = "Sources/YogaKit/include/YogaKit/UIView+Yoga.h"; sourceTree = "<group>"; };
+		66548CFF83C0EE31A1F604862C5A5B1C /* FlexLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexLayout-umbrella.h"; sourceTree = "<group>"; };
+		6E7CB38CB7621D4343BCBF42B3A46529 /* Utils.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = Utils.cpp; path = Sources/yoga/Utils.cpp; sourceTree = "<group>"; };
+		7310C866F860B67A21F8857D25DEFA20 /* UIView+FlexLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+FlexLayout.swift"; path = "Sources/Swift/Impl/UIView+FlexLayout.swift"; sourceTree = "<group>"; };
+		79CD9B3374C3771CEEA0ABDD97886E5A /* YGLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGLayout.h; path = Sources/yoga/YGLayout.h; sourceTree = "<group>"; };
+		8403038A2F7B0607A11B30A54BE1D98E /* Percent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Percent.swift; path = Sources/Swift/Percent.swift; sourceTree = "<group>"; };
+		9781E33656B705FB506F327FC2C06387 /* YGLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGLayout.h; path = Sources/YogaKit/include/YogaKit/YGLayout.h; sourceTree = "<group>"; };
+		9A6660AF26B7FDB29069B6318A83FCA5 /* YGNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGNode.h; path = Sources/yoga/YGNode.h; sourceTree = "<group>"; };
+		9BD6526E3BE33CE0ADD2A9D318A514ED /* FlexLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlexLayout-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FCAC0B3A8C705675409D884CCABA858 /* FlexLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlexLayout-dummy.m"; sourceTree = "<group>"; };
+		A5F242C684A01C73D96D5D846AC67DFD /* Pods-FlexLayoutDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexLayoutDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		A651868370C32908C46444C1E8448BAB /* YGEnums.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGEnums.cpp; path = Sources/yoga/YGEnums.cpp; sourceTree = "<group>"; };
+		A74527D4C46AC230CF103D5292AFA703 /* Pods-FlexLayoutDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexLayoutDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A9781F2C8C706D30EF1E0C406977B450 /* Yoga.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Yoga.h; path = Sources/yoga/include/yoga/Yoga.h; sourceTree = "<group>"; };
+		AE915EF1F374DA79A27BE83F3B4CBB2F /* FlexLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexLayout-prefix.pch"; sourceTree = "<group>"; };
+		B2EADBFD9F0CC743C2E492D92E7FC5E5 /* Yoga.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = Yoga.cpp; path = Sources/yoga/Yoga.cpp; sourceTree = "<group>"; };
+		B4F8D59D07451525A04978945C02ACB0 /* Pods-FlexLayoutDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlexLayoutDemo-dummy.m"; sourceTree = "<group>"; };
+		C00335D69C77261761ABA8221514346A /* YGLayoutExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YGLayoutExtensions.swift; path = Sources/Swift/YGLayoutExtensions.swift; sourceTree = "<group>"; };
+		C5FE4175F3112C37A1EE8227AD6ED0F4 /* YGNodePrint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGNodePrint.h; path = Sources/yoga/YGNodePrint.h; sourceTree = "<group>"; };
+		C72B5FCB4FAF78A4CFE9E3AAD40B09B8 /* FlexLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlexLayout.framework; path = FlexLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D5EAE26C20388A614F9D12B0598140 /* FlexLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlexLayout.modulemap; sourceTree = "<group>"; };
+		D85CF665A9F2D4288CD82076360C1207 /* YGLayout+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YGLayout+Private.h"; path = "Sources/YogaKit/include/YogaKit/YGLayout+Private.h"; sourceTree = "<group>"; };
+		DA70449DA41B1F2523922B5D37D216CD /* YGLayout.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = YGLayout.mm; path = Sources/YogaKit/YGLayout.mm; sourceTree = "<group>"; };
+		E1039E3555CD8B65F8BB3B89E0243C21 /* YGNode.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGNode.cpp; path = Sources/yoga/YGNode.cpp; sourceTree = "<group>"; };
+		EAD3C55693216397281DB6C0212141CC /* YGEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGEnums.h; path = Sources/yoga/include/yoga/YGEnums.h; sourceTree = "<group>"; };
+		EFABBB89C7947174CB17B95D6ADB585B /* YGMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGMacros.h; path = Sources/yoga/include/yoga/YGMacros.h; sourceTree = "<group>"; };
+		FB83445441BCF5396BCC1DAE868DEB85 /* FlexLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlexLayout.h; path = Sources/SupportingFiles/FlexLayout.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		094B35ED5733F98AD622E3C0FA3033EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BEA8B0D3DE661379BE3F2B5951CE43E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C746F500C5A2CF8F1F7904A45E8D35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3480AEA4EB6BDAD2FB035680249125EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1783274408099871ABE29B7CC85EAA7A /* FlexLayout */ = {
+			isa = PBXGroup;
+			children = (
+				FB83445441BCF5396BCC1DAE868DEB85 /* FlexLayout.h */,
+				320E72786D7371B42ABAF07468BDE309 /* FlexLayout.swift */,
+				55EF19D6D6E96F3832A1CB48E8461433 /* FlexLayout+Enum.swift */,
+				5FDA9E0EDF80243CBAF151305547EAD7 /* FlexLayout+Private.swift */,
+				8403038A2F7B0607A11B30A54BE1D98E /* Percent.swift */,
+				7310C866F860B67A21F8857D25DEFA20 /* UIView+FlexLayout.swift */,
+				6278B8BC09D22411F779E34859FD2B9C /* UIView+Yoga.h */,
+				45F647F6BAB1E707CCD1B14C477005CA /* UIView+Yoga.mm */,
+				6E7CB38CB7621D4343BCBF42B3A46529 /* Utils.cpp */,
+				183526EEB0A260D51D5B17131E89165B /* Utils.h */,
+				A651868370C32908C46444C1E8448BAB /* YGEnums.cpp */,
+				EAD3C55693216397281DB6C0212141CC /* YGEnums.h */,
+				42826F9C69645B8FB503810ADDD205B4 /* YGLayout.cpp */,
+				79CD9B3374C3771CEEA0ABDD97886E5A /* YGLayout.h */,
+				9781E33656B705FB506F327FC2C06387 /* YGLayout.h */,
+				DA70449DA41B1F2523922B5D37D216CD /* YGLayout.mm */,
+				D85CF665A9F2D4288CD82076360C1207 /* YGLayout+Private.h */,
+				C00335D69C77261761ABA8221514346A /* YGLayoutExtensions.swift */,
+				EFABBB89C7947174CB17B95D6ADB585B /* YGMacros.h */,
+				E1039E3555CD8B65F8BB3B89E0243C21 /* YGNode.cpp */,
+				9A6660AF26B7FDB29069B6318A83FCA5 /* YGNode.h */,
+				0D4F4C5AC46C5EB5F7367FBAFBF9C367 /* YGNodePrint.cpp */,
+				C5FE4175F3112C37A1EE8227AD6ED0F4 /* YGNodePrint.h */,
+				5CD7F39AEC12A5D7C89A71272EB9015A /* YGStyle.cpp */,
+				4F407C8E53F50BCF5DF53BA810FC85E0 /* YGStyle.h */,
+				B2EADBFD9F0CC743C2E492D92E7FC5E5 /* Yoga.cpp */,
+				A9781F2C8C706D30EF1E0C406977B450 /* Yoga.h */,
+				09577AA63102638D6D7A3E8C53C1D530 /* Yoga-internal.h */,
+				B735D6800A364F64DE04C3D6DDFD4FEB /* Support Files */,
+			);
+			name = FlexLayout;
+			path = FlexLayout;
+			sourceTree = "<group>";
+		};
+		4AB1F353EDB998F153FE3D1A90E856DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1783274408099871ABE29B7CC85EAA7A /* FlexLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8D6F8AED6799DED39D41A5F2B9AC7DB8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1949085ECE8AAABB5C5C61E47C8DB64 /* Pods-FlexLayoutDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B1949085ECE8AAABB5C5C61E47C8DB64 /* Pods-FlexLayoutDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2656DED1BF72618410B53E188F552F62 /* Pods-FlexLayoutDemo.modulemap */,
+				5A6AB4FB1DD263E37F4B90F60294242A /* Pods-FlexLayoutDemo-acknowledgements.markdown */,
+				A5F242C684A01C73D96D5D846AC67DFD /* Pods-FlexLayoutDemo-acknowledgements.plist */,
+				B4F8D59D07451525A04978945C02ACB0 /* Pods-FlexLayoutDemo-dummy.m */,
+				4F10BA74886E953332713A245A673CE9 /* Pods-FlexLayoutDemo-frameworks.sh */,
+				27E54E43C4FC364E80A547F70DCA2C2E /* Pods-FlexLayoutDemo-Info.plist */,
+				603910BD73EA392B5E78097905B30724 /* Pods-FlexLayoutDemo-umbrella.h */,
+				A74527D4C46AC230CF103D5292AFA703 /* Pods-FlexLayoutDemo.debug.xcconfig */,
+				5C0AF76283DC5ED9C570DF51C2C0C617 /* Pods-FlexLayoutDemo.release.xcconfig */,
+			);
+			name = "Pods-FlexLayoutDemo";
+			path = "Target Support Files/Pods-FlexLayoutDemo";
+			sourceTree = "<group>";
+		};
+		B735D6800A364F64DE04C3D6DDFD4FEB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5D5EAE26C20388A614F9D12B0598140 /* FlexLayout.modulemap */,
+				3EC63C02350FDB048C0656ED0C0ADBDC /* FlexLayout.xcconfig */,
+				9FCAC0B3A8C705675409D884CCABA858 /* FlexLayout-dummy.m */,
+				9BD6526E3BE33CE0ADD2A9D318A514ED /* FlexLayout-Info.plist */,
+				AE915EF1F374DA79A27BE83F3B4CBB2F /* FlexLayout-prefix.pch */,
+				66548CFF83C0EE31A1F604862C5A5B1C /* FlexLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FlexLayout";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4AB1F353EDB998F153FE3D1A90E856DA /* Pods */,
+				D4138FC16D9634CCFA6161148258F54F /* Products */,
+				8D6F8AED6799DED39D41A5F2B9AC7DB8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4138FC16D9634CCFA6161148258F54F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C72B5FCB4FAF78A4CFE9E3AAD40B09B8 /* FlexLayout.framework */,
+				5E02DE5795C35DDF033B5F61A1BFDD53 /* Pods_FlexLayoutDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4F5C3CDF15F8B45000D8F14D48E09CE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41BF40BC26C76E2C807900A1C25D70FF /* FlexLayout-umbrella.h in Headers */,
+				462A9A6D0831A96B730AFF0B6A895C9D /* FlexLayout.h in Headers */,
+				8432EDEEEB5E2824EFB1CAED6C4F43B7 /* UIView+Yoga.h in Headers */,
+				E10DE013A0C3F8E694949D4EBA549957 /* Utils.h in Headers */,
+				CDE42E7D5C642AFFFC465BEEB42B643C /* YGEnums.h in Headers */,
+				682DCFD73C751973E73C47FE3A4C0B0E /* YGLayout+Private.h in Headers */,
+				A814E981192DACC9758D3EBC12E75EA2 /* YGLayout.h in Headers */,
+				259E775B86F235AB5658DD0ED0C3026A /* YGLayout.h in Headers */,
+				137120FEA8AA87DB8AC1C4936C1B419D /* YGMacros.h in Headers */,
+				D6D9FD4EC0D5EB5491E3C2983C808998 /* YGNode.h in Headers */,
+				51AE7F4F2FCBF80F5457754F81844C6F /* YGNodePrint.h in Headers */,
+				0582FCD9080537DF96FB4B34E778E8D3 /* YGStyle.h in Headers */,
+				FD12E01F8C10F481C829F3254AC66A42 /* Yoga-internal.h in Headers */,
+				792AED9CED00D006A0D9908080AB2F3A /* Yoga.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2624CDC9F0B53B41550F1AF00136404 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7575A8F906908A310679B985876B5FD /* Pods-FlexLayoutDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9B669057662AC2963D287EC448129F48 /* FlexLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 380AC7FD038F256696BF7BE8559A53DD /* Build configuration list for PBXNativeTarget "FlexLayout" */;
+			buildPhases = (
+				4F5C3CDF15F8B45000D8F14D48E09CE5 /* Headers */,
+				00221B9E2A4AF780A47F2830D2DD5F3A /* Sources */,
+				094B35ED5733F98AD622E3C0FA3033EC /* Frameworks */,
+				48E21983C63AFB0969F03AB1BD591FF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlexLayout;
+			productName = FlexLayout;
+			productReference = C72B5FCB4FAF78A4CFE9E3AAD40B09B8 /* FlexLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF96DD12F247AA9212F48E29934A57E1 /* Pods-FlexLayoutDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A20A0AE4E31702CF6B8BDD25F7B34D /* Build configuration list for PBXNativeTarget "Pods-FlexLayoutDemo" */;
+			buildPhases = (
+				E2624CDC9F0B53B41550F1AF00136404 /* Headers */,
+				BD40A93BE0406D4FCCC1C87C42A662C9 /* Sources */,
+				B8C746F500C5A2CF8F1F7904A45E8D35 /* Frameworks */,
+				B6A12CAE4D15E9E529CBE42E8C2386C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EC2AFE44CD9E168F5A4D48341926B1E /* PBXTargetDependency */,
+			);
+			name = "Pods-FlexLayoutDemo";
+			productName = "Pods-FlexLayoutDemo";
+			productReference = 5E02DE5795C35DDF033B5F61A1BFDD53 /* Pods_FlexLayoutDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D4138FC16D9634CCFA6161148258F54F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B669057662AC2963D287EC448129F48 /* FlexLayout */,
+				DF96DD12F247AA9212F48E29934A57E1 /* Pods-FlexLayoutDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48E21983C63AFB0969F03AB1BD591FF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A12CAE4D15E9E529CBE42E8C2386C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00221B9E2A4AF780A47F2830D2DD5F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B3E6E33BB9C630944F98376D1F8A95 /* FlexLayout+Enum.swift in Sources */,
+				5763BDACF6E1CCFB03077FBDD3CCF1D8 /* FlexLayout+Private.swift in Sources */,
+				17C3C640A143487C78BA74F0ED89DC15 /* FlexLayout-dummy.m in Sources */,
+				BC048396A87D154BD42D2BC349B64967 /* FlexLayout.swift in Sources */,
+				943DC2D71DBC3C3F7A4DFC81C580EB3F /* Percent.swift in Sources */,
+				E4E9180E2601F43CCF1BAD0A385DC7ED /* UIView+FlexLayout.swift in Sources */,
+				335B4F0601EF3117138C2B76D5F0A60A /* UIView+Yoga.mm in Sources */,
+				2DBCD2DA628D650C3573E51C0C0E2A24 /* Utils.cpp in Sources */,
+				FBE710076D8843D7CD63CE6526899FEE /* YGEnums.cpp in Sources */,
+				1B75AF9E3F8AD4D76E2DE5403A08714E /* YGLayout.cpp in Sources */,
+				B0F97DE7AB3B6638A0B1328A7D5E9FFC /* YGLayout.mm in Sources */,
+				8905A126D79F97AEEB5AB24C73E77282 /* YGLayoutExtensions.swift in Sources */,
+				E18F006BDE41BC893BAEDDD086B75B43 /* YGNode.cpp in Sources */,
+				79585F133D5559AA07ACC86738462BF7 /* YGNodePrint.cpp in Sources */,
+				F2C73BB13803630053D1E2C8947483B1 /* YGStyle.cpp in Sources */,
+				2C4A421CCD2AED344F88F63CE00645F5 /* Yoga.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD40A93BE0406D4FCCC1C87C42A662C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				666B4759B1EADC94CCB208BDF6ECA5CB /* Pods-FlexLayoutDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EC2AFE44CD9E168F5A4D48341926B1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlexLayout;
+			target = 9B669057662AC2963D287EC448129F48 /* FlexLayout */;
+			targetProxy = 128F77E1BF16E5CD5E10BBA67DDBCA30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16DA5CE16CE0D0D092B64849C8607053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC63C02350FDB048C0656ED0C0ADBDC /* FlexLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlexLayout/FlexLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexLayout/FlexLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FlexLayout/FlexLayout.modulemap";
+				PRODUCT_MODULE_NAME = FlexLayout;
+				PRODUCT_NAME = FlexLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1D5B09950B7C162B82C378F64CE67815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C0AF76283DC5ED9C570DF51C2C0C617 /* Pods-FlexLayoutDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlexLayoutDemo/Pods-FlexLayoutDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlexLayoutDemo/Pods-FlexLayoutDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ACE2BE5EBF0D1AFB0A593698FC49C298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74527D4C46AC230CF103D5292AFA703 /* Pods-FlexLayoutDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlexLayoutDemo/Pods-FlexLayoutDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlexLayoutDemo/Pods-FlexLayoutDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C3FCAD2A401D4546DE71B64531413008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC63C02350FDB048C0656ED0C0ADBDC /* FlexLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlexLayout/FlexLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexLayout/FlexLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FlexLayout/FlexLayout.modulemap";
+				PRODUCT_MODULE_NAME = FlexLayout;
+				PRODUCT_NAME = FlexLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		380AC7FD038F256696BF7BE8559A53DD /* Build configuration list for PBXNativeTarget "FlexLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16DA5CE16CE0D0D092B64849C8607053 /* Debug */,
+				C3FCAD2A401D4546DE71B64531413008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A20A0AE4E31702CF6B8BDD25F7B34D /* Build configuration list for PBXNativeTarget "Pods-FlexLayoutDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE2BE5EBF0D1AFB0A593698FC49C298 /* Debug */,
+				1D5B09950B7C162B82C378F64CE67815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
